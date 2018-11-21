@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-powermode-manager",
+  "version": "0.0.1",
+  "description": "Get device's current power mode as well as listen for changes to power mode",
+  "cordova": {
+    "id": "cordova-plugin-powermode-manager",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhashmi/cordova-plugin-powermode-manager"
+  },
+  "keywords": [
+    "Listener",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": {
+    "name": "cordova",
+    "version": ">=3.0.0"
+  },
+  "author": "Mustafa Hashmi <mahashmi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhashmi/cordova-plugin-powermode-manager/issues"
+  },
+  "homepage": "https://github.com/mhashmi/cordova-plugin-powermode-manager"
+}

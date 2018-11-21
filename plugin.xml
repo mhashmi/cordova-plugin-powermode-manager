@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="cordova-plugin-powermode-manager"
+  version="1.0.0">
+  <name>Cordova PowerMode Manager plugin</name>
+  <description>Get device's current power mode as well as listen for changes to power mode</description>
+  <author>Mustafa A. Hashmi</author>
+  <license>MIT</license>
+  <keywords>cordova,power mode</keywords>
+  <repo>https://github.com/mhashmi/cordova-plugin-powermode-manager</repo>
+  <issue>https://github.com/mhashmi/cordova-plugin-powermode-manager/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+  <js-module src="www/powermodemanager.js" name="powermodemanager">
+      <clobbers target="window.powermodemanager" />
+  </js-module>
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="PowerModeManager">
+				<param name="ios-package" value="PowerModeManager" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/PowerModeManager.h" />
+		<source-file src="src/ios/PowerModeManager.m" />
+	</platform>
+</plugin>
